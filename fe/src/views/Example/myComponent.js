@@ -53,6 +53,7 @@ class MyComponent extends React.Component {
   render() {
     return (
       <div>
+        <p className="title">CRUD Fake</p>
         <input
           type="text"
           id="input"
