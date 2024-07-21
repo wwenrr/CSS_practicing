@@ -1,21 +1,23 @@
 .name_container {
-    margin-top: 50px;
-    width: 50%;
-    min-height: 100px;
-    border: black;
-    border-style: solid;
-    position: relative;
+  margin-top: 50px;
+  width: 50%;
+  min-height: 500px;
+  border: black;
+  border-style: solid;
+  position: relative;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .num {
-    display: flexbox;
-    padding: 10px;
-    border: solid;
-    margin: 10px;
-    background-color: gainsboro;
+  display: flexbox;
+  padding: 10px;
+  border: solid;
+  margin: 10px;
+  background-color: gainsboro;
 }
 
 .trash {
-    position: absolute;
-    right: 25px;
+  position: absolute;
+  right: 25px;
 }
