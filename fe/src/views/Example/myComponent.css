@@ -1,0 +1,21 @@
+.name_container {
+    margin-top: 50px;
+    width: 50%;
+    min-height: 100px;
+    border: black;
+    border-style: solid;
+    position: relative;
+}
+
+.num {
+    display: flexbox;
+    padding: 10px;
+    border: solid;
+    margin: 10px;
+    background-color: gainsboro;
+}
+
+.trash {
+    position: absolute;
+    right: 25px;
+}

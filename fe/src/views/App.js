@@ -1,9 +1,9 @@
-
+import MyComponent from './Example/myComponent'
 
 function App() {
   return (
     <div className="App">
-      hi
+      <MyComponent/>
     </div>
   );
 }
