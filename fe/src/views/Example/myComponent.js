@@ -59,9 +59,11 @@ class MyComponent extends React.Component {
           id="input"
           value={this.state.input_value}
           onChange={(event) => {
-            this.setState({
-              input_value: event.target.value,
-            });
+            if (this.state.input_value.length <= 10) {
+              this.setState({
+                input_value: event.target.value,
+              });
+            }
           }}
           onKeyDown={(event) => {
             if (event.key === "Enter") this.handeSubmit();
