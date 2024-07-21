@@ -1,1 +1,1 @@
-# CSS_practicing
+npx create-react-app fe
