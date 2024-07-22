@@ -43,13 +43,6 @@ class MyComponent extends React.Component {
     } else alert("please type any content");
   };
 
-  handleDelete = (id) => {
-    const newArr = this.state.arr_rendering.filter((item) => item.id != id);
-    this.setState({
-      arr_rendering: newArr,
-    });
-  };
-
   render() {
     return (
       <div>
@@ -85,7 +78,14 @@ class MyComponent extends React.Component {
               key={item.id}
               id={item.id}
               input_value={item.input_value}
-              onDelete={this.handleDelete}
+              onDelete={(id) => {
+                const newArr = this.state.arr_rendering.filter(
+                  (item) => item.id != id
+                );
+                this.setState({
+                  arr_rendering: newArr,
+                });
+              }}
             />
           ))}
         </div>
